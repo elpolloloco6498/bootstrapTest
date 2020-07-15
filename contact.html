@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="assets/img/favicon.ico">
+        <title>Bootstrap to wordpress</title>
+        <!-- Bootstrap -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- fontawesome icons -->
+        <link href="assets/css/fontawesome/css/all.min.css" rel="stylesheet">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+        <!--Custom CSS-->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+    </head>
+
+    <!-- boostrap : https://www.codeply.com/go/kTGlK9Axdk -->
+
+    <body>
+        <header class="site-header" role="banner">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark" role="navigation">
+                
+                <!--<a class="navbar-brand" href="#">Navbar</a>-->
+                <div class="mx-auto text-center">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <!--accessibility-->
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <a class="navbar-brand mr-0" href="#"><img src="assets/img/umbrella_logo.png" width="40px" alt="logo website"></a>
+                        </div>
+                    
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav ml-3 text-center">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav><!--nav-->
+        </header><!--header-->
+
+        <!-- BLOG-BANNER -->
+        <section class="contact-banner">
+            <div class="container">
+                <h2>Contacts</h2>
+            </div>
+        </section><!--BLOG-BANNER-->
+
+        <!--CONTACT-FORM-->
+        <section class="contact-form">
+            <div class="container">
+                <h5>If you have any question about our service please feel free to ask.</h5>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="nameuser">Name</label>
+                                <input type="text" placeholder="Your name" id="nameuser">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="emailuser">Email</label>
+                                <input type="email" placeholder="Your Email" id="emailuser">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="comment">Comment</label>
+                                <textarea type="text" placeholder="Your comment" id="comment"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white mx-auto text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="#"><img src="assets/img/umbrella_logo.png" width="40px"></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <nav>
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                                <li class="list-inline-item"><a href="blog.html">Blog</a></li>
+                                <li class="list-inline-item"><a href="contact.html">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-3">
+                        <p>&copy; 2020 Umbrella Corporation</p>
+                    </div>
+                </div><!--row-->
+            </div><!--container-->
+        </footer>
+
+        <!--MODAL-->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title"><i class="fa fa-envelope" aria-hidden="true"></i> Subscribe to the newsletter</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                    </div><!--HEADER-->
+
+                    <div class="modal-body">
+                        <p>Subscribe to our newsletter to receive free samples of our products !</p>
+                        <form class="form-inline" role="form">
+                            <div class="form-groupe">
+                                <label class="sr-only" for="subscriber-name"> Your first name</label>
+                                <input type="text" class="form-control" id="subscriber-name" placeholder="Your first name">
+                            </div><!--form group-->
+                            <div class="form-groupe">
+                                <label class="sr-only" for="subscriber-email">Your email</label>
+                                <input type="text" class="form-control" id="subscriber-email" placeholder="Your email">
+                            </div><!--form group-->
+                        </form>
+                    </div><!--BODY-->
+
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger">Subscribe !</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div><!--FOOTER-->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- bootstrap js scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
