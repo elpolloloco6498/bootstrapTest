@@ -1,0 +1,397 @@
+/* Color references 
+Cerelean Blue: #2251c0
+Inchworm: #87e752
+Kelly green: #43B929
+Cotton candy: #ffcae9
+Wild strawberry: #FF37A6
+*/
+
+/* GENERAL */
+
+body {
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: url('../img/tile.jpg') top left repeat;
+}
+
+/* GLOBAL */
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing : antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.main-logo {
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+/*element of the class of row that comes directly after a row element*/
+.row + .row {
+    margin-top: 20px;
+}
+
+/* HERO */
+
+.hero {
+    background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
+    background-size: cover;
+    min-height: 400px;
+    padding: 100px 0px;
+    color: white;
+} 
+
+.hero .hero-text {
+    margin-top: 40px;
+}
+
+.price-list .price {
+    display: inline-block;
+    padding: 10px 10px 10px;
+    margin: 0 0 0 2%;
+    width: 30%;
+    background: #43B929;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.price-list .price.active {
+    background: #2251c0;
+}
+
+.price-list p {
+    background: black;
+    display: block;
+    height: 40px;
+    width: 60px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.hero article {
+    text-align: center;
+}
+
+/* OPT-IN */
+
+.optin {
+    padding: 10px;
+    background: #87e752;
+}
+
+.optin p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    margin-top: -0.8em;
+}
+
+/* BUSINESS-PRESENTATION */
+
+.business-pres {
+    margin-top: 10px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.business-pres img {
+    width: 100px;
+}
+
+/* WHO-BENEFITS */
+
+.who-benefits {
+    margin-top: 10px;
+    background: white;
+}
+
+.who-benefits img {
+    width: 100px;
+}
+
+/* CLIENTS */
+
+.clients {
+    background: #2251c0;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.clients img {
+    margin-top: 20px;
+    width: 100px;
+}
+
+/* PRODUCTS */
+.products {
+    text-align: center;
+}
+
+.products img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* VIDEO */
+
+.video {
+    color: white;
+    text-align: center;
+    background: url('../img/genetic.jpg') 50% 100% repeat fixed;
+    background-size: cover;
+    padding: 40px;
+}
+
+.video h2 {
+    margin: 20px;
+}
+
+/* BIG-BOSS */
+
+.big-boss {
+    padding: 40px;
+    background-image: url('../img/boss.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: 85% 0;
+    background-size: 600px;
+    color: white;
+}
+
+.num {
+    display: table;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #e95d0d;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.num-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* TESTIMONIALS */
+
+.testimonial {
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    margin: 40px;
+}
+
+.testimonials img {
+    width: 115px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.testimonials h2 {
+    text-align: center;
+}
+
+.testimonial {
+    display: table;
+}
+
+.testimonial .col-sm-8 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+}
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 969px) {
+    .big-boss {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-logo {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .num {
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+    }
+}
+
+/* FORMS */
+input[type="text"], input[type="url"], input[type="username"], input[type="email"], input[type="password"], input[type="search"], textarea {
+    display: block;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+/*=== BLOG ===*/
+
+.post, .widget {
+    position: relative;
+    border: solid 1px black;
+    background: white;
+    border-radius: 5px;
+    margin: 15px 0 20px;
+}
+
+.post header, .post .post-excerpt, .post .post-body {
+    padding: 20px;
+}
+
+.post header h3 {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: solid 1px black;
+}
+
+.post post-img {
+    height: auto;
+}
+
+.post .post-comments-badge {
+    background: green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* BLOG-BANNER */
+
+.blog-banner {
+    text-align: center;
+    background: url('../img/scientists.jpg') 100% 20% no-repeat fixed;
+    color: white;
+}
+
+.blog-banner .container{
+    display: table;
+    width: 100%;
+    height: 150px;
+}
+
+.blog-banner h2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* WIDGET */
+
+.widget {
+    padding: 5px 15px 10px;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul li {
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+.widget h4 {
+    border-bottom: solid 1px black;
+}
+
+/* COMMENTS */
+
+.comments ol {
+    list-style: none;
+}
+
+.comment {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.comment ol li {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.comment ol.children {
+    font-size: 0.94em;
+    padding: 0;
+}
+
+/*===CONTACT===*/
+
+/* CONTACT-FORM */
+
+/* CONTACT-BANNER */
+.contact-form {
+    background: white;
+    padding: 10px 5px;
+}
+
+.contact-banner {
+    text-align: center;
+    background: url('../img/scientists.jpg') 100% 20% no-repeat fixed;
+    color: white;
+}
+
+.contact-banner .container{
+    display: table;
+    width: 100%;
+    height: 600px;
+}
+
+.contact-banner h2 {
+    display: table-cell;
+    vertical-align: middle;
+}
